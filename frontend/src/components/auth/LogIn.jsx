@@ -11,7 +11,7 @@ import { toast } from 'sonner'
 import { useDispatch, useSelector } from 'react-redux'
 import { setLoading, setUser } from '@/redux/AuthSlice'
 
-function login() {
+function LogIn() {
   const [input, setInput] = useState({
     email: "",
     password: "",
@@ -97,4 +97,4 @@ function login() {
   )
 }
 
-export default login
+export default LogIn

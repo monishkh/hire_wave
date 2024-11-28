@@ -10,7 +10,7 @@ import axios from 'axios'
 import { USER_API_END_POINT } from '@/utils/constant'
 import { toast } from 'sonner'
 
-function Signup() {
+function SignUp() {
     const [showPassword, setShowPassword] = useState(false)
     const [input, setInput] = useState({
         username: "",
@@ -207,4 +207,4 @@ function Signup() {
     )
 }
 
-export default Signup
+export default SignUp
