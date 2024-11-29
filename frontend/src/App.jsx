@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
-import LogIn from './components/auth/login'
-import SignUp from './components/auth/Signup'
+import LogIn from './components/auth/LogIn'
+import SignUp from './components/auth/SignUp'
 
 
 import Home from './components/Home'
@@ -10,7 +10,6 @@ import Jobs from './components/Jobs'
 import Browse from './components/Browse'
 import Profile from './components/Profile'
 import JobDescription from './components/JobDescription'
-import userGetAllJobs from './hooks/useGetAllCompanies'
 import AdminCompanies from './components/admin/AdminCompanies'
 import AdminJobs from './components/admin/AdminJobs'
 import CreateCompany from './components/admin/CreateCompany'
@@ -18,6 +17,8 @@ import CompanyDetails from './components/admin/CompanyDetails'
 import CreateJob from './components/admin/CreateJob'
 import Applicants from './components/admin/Applicants'
 import ProtectedRoute from './components/admin/ProtectedRoute'
+
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -90,9 +91,6 @@ const appRouter = createBrowserRouter([
 ])
 
 function App() {
-
-
-
   return (
     <RouterProvider router={appRouter} />
   )
