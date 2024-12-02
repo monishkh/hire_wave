@@ -1,7 +1,7 @@
 
 import express from 'express';
 import { createCompany, deleteCompany, getCompany, getCompanyById, updateCompany } from '../controllers/company.controller.js';
-import { authenticate } from '../middleware/auth.js';
+import {authenticate} from '../middleware/Auth.js'
 import { singleUpload } from '../middleware/multer.js';
 const router = express.Router();
 

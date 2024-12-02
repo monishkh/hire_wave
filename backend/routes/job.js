@@ -1,7 +1,7 @@
 
 import express from 'express'
 import { createJob, getQuery, getJobById, getJobByRecruiter, getUpdateJob } from '../controllers/job.controller.js'
-import { authenticate } from '../middleware/auth.js'
+import {authenticate} from '../middleware/Auth.js'
 const router = express.Router()
 
 
