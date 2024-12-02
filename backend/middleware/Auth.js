@@ -8,8 +8,7 @@ export const authenticate = async (req, res, next) => {
     try {
         // get token from request cookies
         const token = req.cookies.token;
-
-       
+        
         
 
         // if token is not present, return unauthorized
