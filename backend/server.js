@@ -26,7 +26,7 @@ app.use(cookieParser());
 
 
 const corsOptions = {
-  origin: "https://hire-wave-85qi.onrender.com/",
+  origin: "https://hire-wave-85qi.onrender.com",
   credentials: true,
 
 }
